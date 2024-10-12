@@ -20,8 +20,8 @@ const config: Config = {
   	},
   	extend: {
   		colors: {
-  			main: '#3c10cc',
-  			mainHover: '#330ead',
+  			main: '#00CCCC',
+  			mainHover: '#00AAAA',
   			darkBg: '#101011',
   			darkBgContent: '#1B1B1B'
   		},
