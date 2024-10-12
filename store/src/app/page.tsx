@@ -1,4 +1,7 @@
+"use client"
+
 import ProductCard from "@/components/productCard";
+import { BackgroundLines } from "@/components/ui/background-lines";
 import Image from "next/image";
 
 export default function Home() {
@@ -55,6 +58,19 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="min-h-screen relative">
+        <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
+          <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-600 to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
+            Sanjana Airlines, <br /> Sajana Textiles.
+          </h2>
+          <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-400 text-center">
+            Get the best advices from our experts, including expert artists,
+            painters, marathon enthusiasts and RDX, totally free.
+          </p>
+        </BackgroundLines>
+      </section>
+
       <section className="min-h-screen flex flex-col">
         <h3 className="text-4xl text-center font-semibold">Contact Us</h3>
 
