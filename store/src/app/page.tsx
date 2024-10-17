@@ -2,15 +2,27 @@
 
 import ProductCard from "@/components/productCard";
 import { BackgroundLines } from "@/components/ui/background-lines";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import hero_img from "@/app/assets/hero.png";
 
 export default function Home() {
   return (
-    <div>
-      <section className="h-screen container">
-        hero
+    <main className="z-30">
+      <section className="md:h-[90vh] h-full container">
+        <div className="md:flex items-center justify-between relative z-40 h-full">
+          <div className="h-full flex flex-col items-start justify-center">
+            <h3 className="pt-10 md:pt-0 w-full md:w-3/6 mb-2.5 inline-block bg-clip-text text-transparent text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#0490db] to-[#66f5b2]">Technology for your convenience</h3>
+            <p className="text-gray-300 mb-6">For your job, study, or housework everything you need is here</p>
+            <Button>Shop now</Button>
+          </div>
+
+          <div>
+            <Image src={hero_img} className="w-80 mt-10 md:mt-0" alt="qsxqsxqs" />
+          </div>
+        </div>
       </section>
-      <section className="min-h-screen flex flex-col">
+      <section className="min-h-screen flex flex-col pt-10">
         <h3 className="text-4xl text-center font-semibold">Featured Products</h3>
 
         <div className="container flex-1 flex items-center my-12 md:my-0">
@@ -23,10 +35,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="bg-darkBgContent pt-10 py-5">
         <h3 className="text-4xl text-center font-semibold">Exceptional Service</h3>
 
-        <div className="container flex-1 flex items-center my-16 md:my-32">
+        <div className="container flex-1 flex items-center py-16 md:py-32">
           <div className="grid md:grid-cols-3 gap-16 w-full">
             <div className="flex items-center flex-col">
               <img width="80" height="80" src="https://img.icons8.com/00CCCC/technical-support.png" alt="technical-support" />
@@ -80,6 +92,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

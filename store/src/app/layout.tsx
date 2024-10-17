@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-darkBg text-white dark">
         <Navbar />
-        <div className="hero"></div>
+        <div className="hero_background"></div>
         {children}
       </body>
     </html>

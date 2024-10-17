@@ -30,7 +30,7 @@ const navbar = () => {
   return (
     <nav className="">
       <div className="container">
-        <div className="flex items-center py-4 z-20">
+        <div className="flex items-center py-4">
           {/* <Link href="/" className="mr-auto flex items-center gap-2 text-lg font-semibold">
             <Image src={LOGO} alt="Logo" className="w-36 h-8" />
           </Link> */}
@@ -103,14 +103,14 @@ const navbar = () => {
 
             </div>
 
-            <Link href="/cart" className="z-30 relative duration-300 text-gray-300 hover:text-gray-100">
+            {/* <Link href="/cart" className="z-30 relative duration-300 text-gray-300 hover:text-gray-100">
               {productsCart.length > 0 &&
                 <div className="absolute flex justify-center items-center text-xs bg-red-600 text-white -right-2 -top-2 w-5 h-5 rounded-full">
                   {productsCart.length}
                 </div>
               }
               <LuShoppingCart size={21} />
-            </Link>
+            </Link> */}
 
             <div className="z-30 md:hidden" onClick={() => setPhoneMenu(true)}>
               <RiMenu3Line size={23} />
