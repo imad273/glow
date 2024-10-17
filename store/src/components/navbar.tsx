@@ -73,7 +73,7 @@ const navbar = () => {
             <div>
               <Drawer>
                 <DrawerTrigger asChild className='cursor-pointer duration-300 text-gray-300 hover:text-gray-100'>
-                  <Languages className="h-5 w-5" />
+                  <Languages className="h-5 w-5 text-gray-400 hover:text-white" />
                 </DrawerTrigger>
                 <DrawerContent>
                   <div className="grid gap-4 p-4">
